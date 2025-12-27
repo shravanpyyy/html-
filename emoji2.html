@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sad Emoji</title>
+    <style>
+        .sad {
+            width:200px;
+            height: 200px;
+            background-color: #6a00ff;
+            border-radius: 50%;
+            position: relative;
+            margin: 50px auto;
+        }
+        .eye {
+            width: 30px;
+            height: 30px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 30px
+        }
+        .eye.left {
+            left: 45px;
+        }
+        .eye.right {
+            right: 45px;
+        }
+        .mouth {
+            width: 80px;
+            height: 25px;
+            border: 3px solid black;
+            border-bottom: none;
+            border-radius: 50% 50% 0 0;
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="sad">
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <div class="mouth"></div>
+    </div>
+</body>
+</html>

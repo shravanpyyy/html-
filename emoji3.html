@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crying Emoji</title>
+    <style>
+        .crying {
+            width: 200px;
+            height: 200px;
+            background-color: #e6e4d9;
+            border-radius: 50%;
+            position: relative;
+            margin: 50px auto;
+        }
+        .eye {
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 40px;
+        }
+        .eye.left {
+            left: 35px;
+        }
+        .eye.right {
+            right: 35px;
+        }
+        .mouth {
+            width: 70px;
+            height: 25px;
+            border: 3px solid black;
+            border-bottom: none;
+            border-radius: 50% 50% 0 0;
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .tear {
+            width: 15px;
+            height: 30px;
+            background-color: #00BFFF;
+            border-radius: 50% 50% 50% 0;
+            position: absolute;
+            top: 75px;
+        }
+        .tear.left {
+            left: 30px;
+        }
+        .tear.right {
+            right: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="crying">
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <div class="mouth"></div>
+        <div class="tear left"></div>
+        <div class="tear right"></div>
+    </div>
+</body>
+</html>
